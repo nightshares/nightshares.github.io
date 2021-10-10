@@ -12,7 +12,7 @@ searchbtn2.onclick = function(){
   window.open(url2,'_self');
 }
 
-var color = ['#b92b27', '#659999', '#c31432', '#f5af19', '#10ac84', "#5f27cd", "#d53369"];
+var color = ['#b92b27', '#6DF7F7', '#659999', '#c31432', '#f5af19', '#10ac84', "#5f27cd", "#d53369"];
 var i = 0;
 
 document.querySelector(".back").addEventListener("click", function(){
