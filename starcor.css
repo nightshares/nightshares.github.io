@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .main {
+  width: 500px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .main h1 {
+  font-size: 35px;
+}
+
+section .main .searchbx {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+section .main .searchbx .query {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+section .main .searchbx .icon {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  align-items: center;
+  pointer-events: none;
+}
+
+section .main .searchbx .icon img {
+  max-width: 100%;
+}
+
+section .main .searchbtn,
+section .main .searchbtn2 {
+  margin: 0 5px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+section .main .searchbtn:hover,
+section .main .searchbtn2:hover  {
+  border: 1px solid #ccc;
+}
+
+.back {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.back button {
+  margin: 0 5px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+#getval {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 12px 20px;
+}
+
+#bg {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="file"]{
+  display: none;
+}
+
+.uploaded {
+  height: 0px;
+  width: 0px;
+  position: relative;
+  top: 283px;
+  left: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploaded i {
+  font-size: 30px;
+  color: #333;
+   height: 10px;
+}
+
+i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#micro {
+  color: red;
+}
+
+#buscaricon {
+  color: blue;
+}
+
+@media (max-width: 1000px){
+  .uploaded {
+    display: none;
+  }
+}
