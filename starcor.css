@@ -144,9 +144,3 @@ i {
 #buscaricon {
   color: blue;
 }
-
-@media (max-width: 1000px){
-  .uploaded {
-    display: none;
-  }
-}
