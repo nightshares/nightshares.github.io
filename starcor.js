@@ -33,3 +33,5 @@ function readURL(){
     
   }
 }
+
+document.oncontextmenu = function(){return false;}
