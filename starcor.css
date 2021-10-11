@@ -116,14 +116,14 @@ input[type="file"]{
 }
 
 .uploaded {
-  height: 0px;
-  width: 0px;
-  position: relative;
-  top: 283px;
-  left: 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .uploaded i {
