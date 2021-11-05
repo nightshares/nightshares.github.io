@@ -27,6 +27,7 @@ section .main {
 
 section .main h1 {
   font-size: 35px;
+  color: red;
 }
 
 section .main .searchbx {
