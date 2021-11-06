@@ -1,26 +1,24 @@
-let query = document.querySelector('.query');
-let searchbtn = document.querySelector('.searchbtn');
-let searchbtn2 = document.querySelector('.searchbtn2');
+const searchInput = document.querySelector("#search-input");
 
-searchbtn.onclick = function(){
-  let url = 'https://www.google.com/search?q=' + query.value;
-  window.open(url,'_self');
+searchInput.addEventListener("keydown", function(event) {
+    if(event.code === "Enter") {
+      if(searchInput.value === ''){
+        return;
+      }
+        search();
+    }
+});
+
+function search() {
+    const input = searchInput.value;
+
+    window.location.href = "https://www.google.com/search?q=" + input + "&rlz=1C5CHFA_enNZ948NZ948&oq=" + input + "&aqs=chrome.0.69i59l2j46i175i199i433j46i199i291i433j46j0i433j0j69i60.875j0j9&sourceid=chrome&ie=UTF-8"
 }
 
-searchbtn2.onclick = function(){
-  let url2 = 'https://duckduckgo.com/?q=' + query.value;
-  window.open(url2,'_self');
-}
+document.oncontextmenu = function(){return false;}
 
-var color = ['#fff', '#FF0000', '#F5FF00', '#1EFF00', '#00FFFD', '#00BDFF', '#0061FF', '#CC00FF', '#FF00BB'];
-var i = 0;
 
-document.querySelector(".back").addEventListener("click", function(){
-  i = i<color.length ?++i : 0;
-  document.querySelector("body").style.background = color[i]
-})
-
-document.querySelector("#getval").addEventListener('change',readURL,true);
+/*document.querySelector("#getval").addEventListener('change',readURL,true);
 function readURL(){
   var file = document.querySelector('#getval').files[0];
   var reader =  new FileReader();
@@ -32,6 +30,4 @@ function readURL(){
   } else {
     
   }
-}
-
-document.oncontextmenu = function(){return false;}
+}*/
