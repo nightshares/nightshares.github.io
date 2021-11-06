@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="logodestarcor.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedCat</title>
+    <link rel="icon" href="redcatlogo.png">
+    <link rel="stylesheet" href="redcat.css">
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
 
-    <title>Redcat - Navega seguro y con velocidad por internet</title>
-    
     <link rel="canonical" href="" />
     <meta
       name="description"
@@ -22,52 +24,76 @@
     />
     <meta
       property="og:image"
-      content="logodestarcor.png"
+      content="redcatlogo.png"
     />
 
     <link rel="canonical" href="" />
     <meta name="twitter:card" content="summary" />
 
-    <link rel="stylesheet" href="redcat.css" />
-    
+    <script defer src="redcat.js"></script>
+
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-    </div>
-    <section class="back-image" id="bg">
-      <div class="main">
-        <h1>RedCat</h1>
-        <div class="searchbx">
-          <input type="text" value="" class="query" onkeypress="handle(event)">
-          <div class="icon">
-          <div><i class='bx bx-search-alt' id="buscaricon"></i></div>
-          <div><i class='bx bx-microphone-off' id="micro"></i></div>
-          </div>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="link" href="https://discord.gg/WrKRkRpV">Nuestro Discord</a>
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="menu-icon" href=""><i class="fas fa-bars"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <!--<div class="circle-shadow">
+                        <a class="user-icon" href=""><span>J</span></a>
+                    </div-->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <div class="content-wrapper">
+            <img class="logo-img" src="redcatlogo.png" alt="RedCat Logo Image">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input id="search-input" class="search-input" type="text">
+                <i class='bx bxs-microphone-off'></i>
+            </div>
+            <!--<div class="search-btns">
+                <button class="duckduckgo-search-btn">Buscar con RedCat Search</button>
+            </div>-->
+            <div class="language">
+                <p>Estamos trabajando en nuestro propio<a href=""> Motor de búsqueda</a></p>
+            </div>
         </div>
-              <div class="button">
-          <button class="searchbtn2">
-          Buscar con DuckDuckGo
-        </button>
-                
-        <button class="searchbtn">
-          Buscar con Google
-        </button>
-      </div>
-      </div>
-      
-      <div class="back">
-        <button class="background">
-          Cambiar color del fondo
-        </button>
-      </div>
-      
-      <input type="file" id="getval" name="backgroundimage"><br>
-      
-      <label for="getval" class="uploaded">
-        <i class='bx bxs-image-add' ></i>
-      </label>
     </section>
-    
-   <script src="redcat.js"></script>
-  </body>
+
+   <!--<footer>
+        <div class="footer-content upper-footer">
+            <p>Tu ciudad</p>
+        </div>
+        <div class="footer-content lower-footer">
+            <ul class="lower-left-footer">
+                <li>
+                    <a href="">NightShare</a>
+                </li>
+                <li>
+                    <a href="">RedCat Search</a>
+                </li>
+            </ul>
+            <ul class="lower-right-footer">
+                <li>
+                    <a href="">Privacidad</a>
+                </li>
+                <li>
+                    <a href="">Ajustes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>-->
+</body>
 </html>
