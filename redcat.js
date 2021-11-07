@@ -1,4 +1,5 @@
 const searchInput = document.querySelector("#search-input");
+const logoSearch = document.querySelector('#logosearch');
 
 searchInput.addEventListener("keydown", function(event) {
     if(event.code === "Enter") {
@@ -7,6 +8,13 @@ searchInput.addEventListener("keydown", function(event) {
       }
         search();
     }
+});
+
+logoSearch.addEventListener("click", () => {
+    if(searchInput.value === ''){
+      return;
+    }
+      search();
 });
 
 function search() {
