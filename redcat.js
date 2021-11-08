@@ -8,6 +8,13 @@ searchInput.addEventListener("keydown", function(event) {
       }
         search();
     }
+    
+        if(event.code === "Intro") {
+      if(searchInput.value === ''){
+        return;
+      }
+        search();
+    }
 });
 
 logoSearch.addEventListener("click", () => {
